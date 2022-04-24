@@ -6,3 +6,4 @@
 
 * [程序的机器级表示](group-1/cheng-xu-de-ji-qi-ji-biao-shi.md)
 * [进程](group-1/jin-cheng.md)
+* [算法红色第四版](group-1/suan-fa-hong-se-di-si-ban.md)
