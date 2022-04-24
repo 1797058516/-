@@ -106,7 +106,7 @@ merge：to combine or make two or more things combine to form a single thing
 
 分而治之思想：一个问题被分成多个子问题，每个子问题都是单独解决的，最后，将子问题组合起来形成最终解决方案。
 
-![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (2).png>)
 
 #### 分而治之
 
