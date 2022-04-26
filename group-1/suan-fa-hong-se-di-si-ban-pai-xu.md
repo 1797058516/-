@@ -1,4 +1,4 @@
-# 算法红色第四版
+# 算法红色第四版\_排序
 
 ## 碎片
 
@@ -122,7 +122,84 @@ merge：to combine or make two or more things combine to form a single thing
 
 当我们得到两个已经排序的子数组，我们通过创建一个新数组将两个已经排序的子数组组合成一个更大的有序数组。
 
-
+```
+// Some code
+```
 
 ### 快速排序
+
+```
+int partition(int arr[],int low,int high){
+    int pivot = arr[high];  //选择一个数字作为比较值，
+    int i =(low -1);
+    //数组所有的值更pivot值做比较
+    for(int j = low; j<high; j++){
+        if(arr[j]<=pivot){
+            i++;
+            swap(&arr[i],&arr[j]);
+        }
+    }
+    swap(&arr[i + 1], &arr[high]);
+    return(i+1);
+}
+
+quickSort(int arr[],leftmostIndex,rightIndex){
+    if (low < high) {
+    int pi = partition(array, low, high);
+    
+    quickSort(array, low, pi - 1);
+    
+    quickSort(array, pi + 1, high);
+  }
+}
+    
+```
+
+### 优先队列
+
+#### 堆排序
+
+了解完全二叉树是什么
+
+堆：需要满足是一个完全二叉树，并且所有父节点都要大于子节点
+
+乱序的完全二叉树要满足所有父节点都要大于子节点就是**heapif过程**
+
+可以用数组表示一个完全二叉树
+
+```
+void swap(int *a,int *b){
+    int temp=*a;
+    *a=*b;
+    *b=temp;
+}
+void heapify(arr[],int n,int i){
+    int max=i;
+    int left=2i+1;
+    int right=2i+2;
+    if(left<n&&arr[left]>arr[max])
+        max=left;
+    if(right<n&&arr[right]>arr[max])
+        max=right;  
+    if(max != i){
+        swap(&arr[i],&arr[max]);
+        heapify(arr, n, largest);
+    }      
+}
+
+void heapSort(int arr[],int n){
+    //无序的数组创建成最大堆
+    for(int i=n/2-1;i>=0;i--)
+        heapify(arr,n,i);
+  
+//堆排序
+    for(int i=n-1;i>=0;i--){
+        swap(&arr[0],&arr[i]);
+        heapify(arr,i,0);
+    }      
+}
+
+
+
+```
 
