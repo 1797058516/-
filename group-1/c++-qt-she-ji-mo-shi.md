@@ -28,7 +28,7 @@ C++中处理字符串的三种途径：
 
 in the output,you can see that sizeof(qstring) is only 4 bytes, but it is a complex class that **uses dynamic memory**, so you must call length() to get the number of QChar in the string.
 
-![](<../.gitbook/assets/image (1).png>)
+![](<../.gitbook/assets/image (1) (1).png>)
 
 在运行时，qstring能够与具有同一个值的另一个字符串共享内存。
 
@@ -236,7 +236,7 @@ c++迭代器，java风格迭代器以及foreach循环都是**迭代器模式**�
 
 ### 按引用传递参
 
-[引用&和取值&的区别](c++-qt-she-ji-mo-shi-1.md#yin-yong-bian-liang-reference-variables)
+[引用&和取值&的区别](c++-qt-she-ji-mo-shi.md#yin-yong-bian-liang-reference-variables)
 
 在c语言中通过指针来传递对象，以避免按值传递的消耗。但是指针的语法与使用对象的语法有所不同，此外偶尔的误用指针也会引起数据的崩溃，导致难以发现运行时的错误。
 

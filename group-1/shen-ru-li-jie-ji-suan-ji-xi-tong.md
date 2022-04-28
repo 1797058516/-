@@ -22,7 +22,7 @@ objdump -d mstore.o  //将机器文件转换成人能看得懂的汇编代码
 
 X86寄存器
 
-![](<../.gitbook/assets/image (1) (1) (1).png>)
+![](<../.gitbook/assets/image (1) (1) (1) (1).png>)
 
 ```
 long exchange(long *xp, long *y) {

@@ -16,7 +16,7 @@
 
 就是面向对象的思想，给排序算法创建一个基类，然后所有其他的排序算法进行继承并且编写属于自己的接口。
 
-#### &#x20;选择排序
+### &#x20;选择排序
 
 特点1：运行时间和输入无关--有序数组和随机乱序数组排序的的时间一样长。
 
@@ -106,7 +106,9 @@ merge：to combine or make two or more things combine to form a single thing
 
 分而治之思想：一个问题被分成多个子问题，每个子问题都是单独解决的，最后，将子问题组合起来形成最终解决方案。
 
-![](<../.gitbook/assets/image (2).png>)
+![](<../.gitbook/assets/image (2).png>)![](<../.gitbook/assets/image (1).png>)
+
+先划分在合并，合并的过程就是排序的过程。
 
 #### 分而治之
 
@@ -122,8 +124,57 @@ merge：to combine or make two or more things combine to form a single thing
 
 当我们得到两个已经排序的子数组，我们通过创建一个新数组将两个已经排序的子数组组合成一个更大的有序数组。
 
+
+
 ```
-// Some code
+void merge(int arr[],int temparr,int left,int mid,int right)
+{
+    //标记左半部分第一个未排序元素
+    int l_pos = left;
+    //标记右半部分第一个未排序元素
+    int r_pos =mid+1;
+    //临时数组元素
+    int pos =left;
+    //合并--合并就是排序的过程
+    while(l_pos<=mid&&r_pos<=right){
+        if(arr[l_pos]<arr[arr[r_pos])
+            temparr[pos++]=arr[l_pos++];
+        else
+            temarr[pos++]=arr[r_pos++];      
+    }
+    // 合并左半区剩余的元素
+    while(l_pos<=mid){
+        temparr[pos++]=arr[l_pos++];
+    }
+    while(r_pos<=right){
+        temparr[pos++]=arr[r_pos++];
+    }    
+     // 把临时数组中合并后的元素复制回原来的数组
+    while (left <= right)
+    {
+        arr[left] = tempArr[left];
+        left++;
+    }   
+}
+
+void mergeSort(int arrr[],int tempArr[],int left,int right){
+    if(left<right){
+        int mid= (left+right)/2;
+        //对左半部分进行归并排序
+        mergeSort(arr,tempArr,left,mid);
+        //对右半部分进行归并排序
+        mergeSort(arr,tempArr,mid+1,right);
+        //合并已经排序的部分
+        merge(arr,tempArr,left,mid,right);
+    }
+}
+void msort(int arr[], int n)
+{
+    // 分配一个辅助数组
+    int tempArr[n];
+    // 调用实际的归并排序
+    mergeSort(arr, tempArr, 0, n - 1);
+}
 ```
 
 ### 快速排序
@@ -156,6 +207,16 @@ quickSort(int arr[],leftmostIndex,rightIndex){
 ```
 
 ### 优先队列
+
+很多应用程序都需要处理有序的元素，但不一定要求它们全部有序，或者是不一定要一次将它们排序。
+
+优先级队列最重要的操作就是删除最大元素和插入元素，所以一定要选择正确的数据结构来实现优先队列。
+
+不管是用有序数组还是无序数组插入和删除操作都是1和N。
+
+但是用堆这个数据结构删除和插入操作时间都是logN，所以用堆这个数据结构能够满足要求。
+
+了解二叉堆是什么，如果父节点是k的画能够通过父节点知道左右子节点，也可以利用子节点确定父节点。这样就能保证最大堆：父节点大于子节点。最小堆反之。
 
 #### 堆排序
 
@@ -198,8 +259,6 @@ void heapSort(int arr[],int n){
         heapify(arr,i,0);
     }      
 }
-
-
 
 ```
 
