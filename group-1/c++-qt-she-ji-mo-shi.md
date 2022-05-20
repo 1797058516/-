@@ -28,13 +28,13 @@ C++中处理字符串的三种途径：
 
 in the output,you can see that sizeof(qstring) is only 4 bytes, but it is a complex class that **uses dynamic memory**, so you must call length() to get the number of QChar in the string.
 
-![](<../.gitbook/assets/image (1) (1) (1).png>)
+![](<../.gitbook/assets/image (1) (1) (1) (1).png>)
 
 在运行时，qstring能够与具有同一个值的另一个字符串共享内存。
 
 
 
-![](<../.gitbook/assets/image (8) (1).png>)
+![](<../.gitbook/assets/image (8) (1) (1).png>)
 
 atio()函数
 
@@ -56,7 +56,7 @@ returns expr1 if boolExpr is true , and otherwise returns expr2 .
 
 因为不能进行赋值操作，所以const对象**必须进行初始化。**
 
-****![](<../.gitbook/assets/image (6).png>)****
+****![](<../.gitbook/assets/image (6) (1).png>)****
 
 无需针对const变量分配存储空间，除非要取它地址。如果const变量的初始化器是一个能够在编译时进行求值的常量表达式，且编译器知道它的每一个使用之处，则没必要为它分配存储空间。
 
@@ -74,9 +74,9 @@ returns expr1 if boolExpr is true , and otherwise returns expr2 .
 
 左值是一个指向对象的表达式。eg变量、解引用的指针等。本质上，左值就是具有内存地址并且可以拥有名称的任何元素。注意，临时表达式或者常量表达式都不是左值，eg：i+l或者3。
 
-![](<../.gitbook/assets/image (7) (1).png>)
+![](<../.gitbook/assets/image (7) (1) (1).png>)
 
-![](<../.gitbook/assets/image (4) (1) (1).png>)
+![](<../.gitbook/assets/image (4) (1) (1) (1).png>)
 
 引用&和取址&之间避免混淆！！
 
@@ -88,7 +88,7 @@ returns expr1 if boolExpr is true , and otherwise returns expr2 .
 
 使用指针时，会涉及两个对象：指针本身以及它所指向的对象。
 
-![](<../.gitbook/assets/image (10) (1).png>)
+![](<../.gitbook/assets/image (10) (1) (1).png>)
 
 ## 类与对象
 
@@ -120,7 +120,7 @@ private、public、protected属性之间的区别？
 
 UML框图能够简明而直观的方式展示类之间如何协作等。
 
-![](<../.gitbook/assets/image (5) (1).png>)
+![](<../.gitbook/assets/image (5) (1) (1).png>)
 
 #### 类的友员
 
@@ -158,7 +158,7 @@ static数据成员都必须在类定义之外中被初始化。
 
 ### 类的声明和定义
 
-![](<../.gitbook/assets/image (1).png>)
+![](<../.gitbook/assets/image (1) (1).png>)
 
 预处理不允许这样的循环依赖！
 
@@ -172,7 +172,7 @@ static数据成员都必须在类定义之外中被初始化。
 
 ### const成员函数
 
-![](<../.gitbook/assets/image (11) (1).png>)
+![](<../.gitbook/assets/image (11) (1) (1).png>)
 
 const对象不能调用非const方法
 
@@ -216,7 +216,7 @@ eg：使用指针的函数在集合中搜索失败时可以返回一个空指针
 
 c++迭代器，java风格迭代器以及foreach循环都是**迭代器模式**的例子。
 
-![](<../.gitbook/assets/image (9).png>)
+![](<../.gitbook/assets/image (9) (1).png>)
 
 ## 函数
 
@@ -244,15 +244,15 @@ c++迭代器，java风格迭代器以及foreach循环都是**迭代器模式**�
 
 指针和引用主要区别：对于指针，必须解引用它；对于引用，可以用访问被引用实体同样的方式访问按引用传递的对象。
 
-![](<../.gitbook/assets/image (4) (1).png>)
+![](<../.gitbook/assets/image (4) (1) (1).png>)
 
-![](<../.gitbook/assets/image (11).png>)
+![](<../.gitbook/assets/image (11) (1).png>)
 
 比起指针更倾向于引用，这样可以降低程序偶尔发生内存崩溃的概率。只有在管理那些需要对指针进行操作的对象时（创建、销毁），才会选择使用指针，并且通常可以将这些例程封装为成员函数。
 
 ### const引用
 
-![](<../.gitbook/assets/image (12) (1).png>)
+![](<../.gitbook/assets/image (12) (1) (1).png>)
 
 ### 从函数返回引用
 

@@ -214,9 +214,9 @@ public继承之后其实由两个部分组成：函数接口继承和函数实�
 
 所以说好的设计是：我们利用“纯虚函数必须在派生类中重新定义，但它们**可以拥有自己的实现**”。利用纯虚函数可以拥有自己的实现这一点让我们在这个实现部分来定义默认飞机飞往北京，来替代前面的defaultfly虚函数。
 
-![](<../.gitbook/assets/image (7).png>)
+![](<../.gitbook/assets/image (7) (1).png>)
 
-![](<../.gitbook/assets/image (10).png>)
+![](<../.gitbook/assets/image (10) (1).png>)
 
 #### 非虚成员函数
 

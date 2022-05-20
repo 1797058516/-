@@ -12,7 +12,7 @@ allocator是负责封装内存管理的**对象**。
 
 new不允许控制调用哪些构造函数，而只能同时构造所有对象（它迫使您同时构建所有对象）。这是 std:: allocator优于 new。
 
-![](<../.gitbook/assets/image (5).png>)
+![](<../.gitbook/assets/image (5) (1).png>)
 
 [What's the advantage of using std::allocator instead of new in C++?](https://stackoverflow.com/questions/31358804/whats-the-advantage-of-using-stdallocator-instead-of-new-in-c)
 
@@ -95,7 +95,7 @@ destroy()第一种是直接调用对象的析构函数，第二种就是删除�
 
 ### **迭代器实现**
 
-****![](<../.gitbook/assets/image (8).png>)****
+****![](<../.gitbook/assets/image (8) (1).png>)****
 
 迭代器就是分离集合对象的遍历行为，抽象出一个迭代器类来负责，这样既可以做到不暴露集合的内部结构，又可以让外部代码透明的访问集合内部的数据。
 
@@ -190,7 +190,7 @@ adapters在stl组件中扮演者轴承、转换器的角色。adapters其实也�
 
 #### 代码结构
 
-![](<../.gitbook/assets/image (12).png>)
+![](<../.gitbook/assets/image (12) (1).png>)
 
 #### 扁鹊的医术
 
