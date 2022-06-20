@@ -12,7 +12,7 @@ allocator是负责封装内存管理的**对象**。
 
 new不允许控制调用哪些构造函数，而只能同时构造所有对象（它迫使您同时构建所有对象）。这是 std:: allocator优于 new。
 
-![](<../.gitbook/assets/image (5) (1).png>)
+![](<../.gitbook/assets/image (5) (1) (1).png>)
 
 [What's the advantage of using std::allocator instead of new in C++?](https://stackoverflow.com/questions/31358804/whats-the-advantage-of-using-stdallocator-instead-of-new-in-c)
 
@@ -190,7 +190,7 @@ adapters在stl组件中扮演者轴承、转换器的角色。adapters其实也�
 
 #### 代码结构
 
-![](<../.gitbook/assets/image (12) (1).png>)
+![](<../.gitbook/assets/image (12) (1) (1).png>)
 
 #### 扁鹊的医术
 

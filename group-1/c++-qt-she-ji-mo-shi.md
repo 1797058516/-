@@ -56,7 +56,7 @@ returns expr1 if boolExpr is true , and otherwise returns expr2 .
 
 因为不能进行赋值操作，所以const对象**必须进行初始化。**
 
-****![](<../.gitbook/assets/image (6) (1).png>)****
+****![](<../.gitbook/assets/image (6) (1) (1).png>)****
 
 无需针对const变量分配存储空间，除非要取它地址。如果const变量的初始化器是一个能够在编译时进行求值的常量表达式，且编译器知道它的每一个使用之处，则没必要为它分配存储空间。
 
@@ -74,9 +74,9 @@ returns expr1 if boolExpr is true , and otherwise returns expr2 .
 
 左值是一个指向对象的表达式。eg变量、解引用的指针等。本质上，左值就是具有内存地址并且可以拥有名称的任何元素。注意，临时表达式或者常量表达式都不是左值，eg：i+l或者3。
 
-![](<../.gitbook/assets/image (7) (1) (1).png>)
+![](<../.gitbook/assets/image (7) (1) (1) (1).png>)
 
-![](<../.gitbook/assets/image (4) (1) (1) (1).png>)
+![](<../.gitbook/assets/image (4) (1) (1) (1) (1).png>)
 
 引用&和取址&之间避免混淆！！
 
@@ -120,7 +120,7 @@ private、public、protected属性之间的区别？
 
 UML框图能够简明而直观的方式展示类之间如何协作等。
 
-![](<../.gitbook/assets/image (5) (1) (1).png>)
+![](<../.gitbook/assets/image (5) (1) (1) (1).png>)
 
 #### 类的友员
 
@@ -244,7 +244,7 @@ c++迭代器，java风格迭代器以及foreach循环都是**迭代器模式**�
 
 指针和引用主要区别：对于指针，必须解引用它；对于引用，可以用访问被引用实体同样的方式访问按引用传递的对象。
 
-![](<../.gitbook/assets/image (4) (1) (1).png>)
+![](<../.gitbook/assets/image (4) (1) (1) (1).png>)
 
 ![](<../.gitbook/assets/image (11) (1).png>)
 
@@ -252,7 +252,7 @@ c++迭代器，java风格迭代器以及foreach循环都是**迭代器模式**�
 
 ### const引用
 
-![](<../.gitbook/assets/image (12) (1) (1).png>)
+![](<../.gitbook/assets/image (12) (1) (1) (1).png>)
 
 ### 从函数返回引用
 

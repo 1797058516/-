@@ -1,6 +1,8 @@
 # 大话设计模式
 
-![](<../.gitbook/assets/image (20).png>)
+
+
+![](<../.gitbook/assets/image (20) (1).png>)
 
 ###
 
@@ -14,7 +16,7 @@
 
 然后你将这些服饰写成子类，这样子利用了抽象类。代码也确实做到了服饰类与人类的分离，可是还是有问题。
 
-![](<../.gitbook/assets/image (23).png>)
+![](<../.gitbook/assets/image (23) (1).png>)
 
 这样子做的话，如果要显示的要，需要一个一个的调用他们的show();
 
@@ -60,7 +62,7 @@
 
 #### proxy结构图
 
-![](<../.gitbook/assets/image (4).png>)
+![](<../.gitbook/assets/image (4) (1).png>)
 
 subject就是送鲜花或者送礼物的接口，然后proxy和realsubject都继承这个接口，realsubject实现要送玫瑰花还是茉莉花，proxy接口调用realsubject实现好的成员函数。
 
@@ -78,13 +80,13 @@ subject就是送鲜花或者送礼物的接口，然后proxy和realsubject都继
 
 #### 简单工厂模式实现
 
-![](<../.gitbook/assets/image (26).png>)
+![](<../.gitbook/assets/image (26) (1).png>)
 
 在工厂类中选择被选中的运算方法并且实例化该类。
 
 #### 工厂方法模式实现
 
-![](<../.gitbook/assets/image (7).png>)
+![](<../.gitbook/assets/image (7) (1).png>)
 
 简单工厂中工厂类中的接口实现的是选择对应的方法，被选中的实例化。现在是纯虚函数接口被假发类工厂继承并且重载。
 
@@ -100,7 +102,7 @@ IFactory oper = new AddFactory();
 
 #### 工厂方法模式结构图
 
-![](<../.gitbook/assets/image (47).png>)![](<../.gitbook/assets/image (19).png>)
+![](<../.gitbook/assets/image (47) (1).png>)![](<../.gitbook/assets/image (19).png>)
 
 把工厂类抽象出一个接口，这个接口就是实例化一个产品类的。这样增加功能的时候就不需要更改原有的工厂类了。
 
@@ -110,7 +112,7 @@ IFactory oper = new AddFactory();
 
 #### 代码结构图
 
-![](<../.gitbook/assets/image (17).png>)
+![](<../.gitbook/assets/image (17) (1).png>)
 
 #### 模板方法模式
 
@@ -152,7 +154,7 @@ IFactory oper = new AddFactory();
 
 #### 外观模式结构图
 
-![](<../.gitbook/assets/image (48).png>)
+![](<../.gitbook/assets/image (48) (1).png>)
 
 #### 何时使用外观模式
 
@@ -176,7 +178,7 @@ IFactory oper = new AddFactory();
 
 #### 建小人
 
-![](<../.gitbook/assets/image (25).png>)   ![](<../.gitbook/assets/image (6).png>)
+![](<../.gitbook/assets/image (25).png>)   ![](<../.gitbook/assets/image (6) (1).png>)
 
 有个人少画了腿，就跟没有炒面没有放盐巴一样的“作品”
 
@@ -194,7 +196,7 @@ IFactory oper = new AddFactory();
 
 #### 代码结构图
 
-![](<../.gitbook/assets/image (30).png>)
+![](<../.gitbook/assets/image (30) (1).png>)
 
 定义一个抽象的建造人的类（PersonBuilder），不让任何人遗忘当中的任何一步，如果继承类没有重载这个方法，编译器是不会让它通过的。
 
@@ -202,7 +204,7 @@ IFactory oper = new AddFactory();
 
 #### 建造模式结构图
 
-![](<../.gitbook/assets/image (35).png>)
+![](<../.gitbook/assets/image (35) (1).png>)
 
 Builder是什么？是为创建一个Product对象的各个部件指定的抽象接口。
 
@@ -236,7 +238,7 @@ Director是什么？它是构建一个使用Builder接口的对象。
 
 #### 代码结构图
 
-![](<../.gitbook/assets/image (45).png>)
+![](<../.gitbook/assets/image (45) (1).png>)
 
 #### 观察者模式结构图
 
@@ -244,7 +246,7 @@ Director是什么？它是构建一个使用Builder接口的对象。
 
 观察者模式定义了一种**一对多**的依赖关系， 让多个观察者对象同时监听某一个主题对象。 这个主题对象在状态发生变化时， 会通知所有观察者对象， 使它们能够自动更新自己。
 
-![](<../.gitbook/assets/image (46).png>)
+![](<../.gitbook/assets/image (46) (1).png>)
 
 Subject类提供可以增加删除观察者对象。
 
